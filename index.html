@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Currency Exchange</h1>
+    <div>
+      <label for="firstValue">From</label>
+      <input id="firstValue" type="number" onchange="valueChange('first')" 
+      placeholder="Enter amount" />
+      <select id="firstCurrency" onchange="valueChange('first')">
+        <option value="SEK">SEK</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+      </select>
+      <label for="secondValue">To</label>
+      <input id="secondValue" onchange="valueChange('second')" type="number" placeholder="Resulting amount" />
+      <select id="secondCurrency" onchange="valueChange('second')">
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="SEK">SEK</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <h2>Assignment</h2>
+      <p>
+        The user can select a to and from currency through the select. They can enter a value in either the to or from currency, and the resulting conversion should occurr instantly.
+      </p> 
+      <p>
+        Use the event onchange to trigger input changes. 
+        Changing a currency should also update the values. 
+      </p>
+      <p>
+        Currencies available should be USD, SEK, EUR
+      </p>
+    <script src="script.js"></script>
+  </body>
+</html>
